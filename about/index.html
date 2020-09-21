@@ -261,6 +261,7 @@
           
     <div class="comments" id="gitalk-container"></div>
 
+
         </div>
           
   
@@ -298,6 +299,25 @@
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
 </div>
   <div class="links-of-author motion-element">
@@ -415,6 +435,25 @@
 
 
 
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script>
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '3fdc2872f1189c1e232c',
+      clientSecret: '1e4c43f1b61c83842310a75bc4599a9cc6f170a2',
+      repo: 'thanatoschen.github.io',
+      owner: 'thanatoschen',
+      admin: ['thanatoschen'],
+      id: '3be7aa98d992907175cbd79c194399f2',
+        language: 'zh-CN',
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 
   
